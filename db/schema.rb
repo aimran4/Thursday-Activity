@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_21_203409) do
+ActiveRecord::Schema.define(version: 2019_02_21_212531) do
 
   create_table "prices", force: :cascade do |t|
     t.decimal "price"
