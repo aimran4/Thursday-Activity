@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_21_212531) do
+ActiveRecord::Schema.define(version: 2019_02_21_213337) do
 
   create_table "prices", force: :cascade do |t|
     t.decimal "price"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 2019_02_21_212531) do
     t.datetime "updated_at", null: false
     t.integer "Product_id"
     t.integer "Price_id"
+    t.string "vendor_name"
     t.index ["Price_id"], name: "index_vendors_on_Price_id"
     t.index ["Product_id"], name: "index_vendors_on_Product_id"
   end
