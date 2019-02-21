@@ -9,7 +9,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
   <body>
+  <div id ="header">
+    <h1>Inventory List</h1>
+  <%= link_to "Vendors", vendors_path %>
+  <%= link_to "Prices", prices_path %>
+  <%= link_to "Products", products_path %>
+  </div>
+
     <%= yield %>
   </body>
 </html>
